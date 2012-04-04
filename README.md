@@ -23,10 +23,10 @@ Running
 -----------
 Pianobar mode tries to be as unobtrusive as possible so as to not interrupt you while working. It functions much like itunes for emacs in that there is a prefix key (by default f7) that starts any pianobar command. These are globally set so you have them in any mode in any buffer. If you already have f7 bound to something else you can just change the value of the variable “pianobar-key”. When the song changes you should get a notification in the message area and if the function “growl” is defined it will notify via growl of the new song. The following are commonly used commands for running pianobar:
 
-   Pausing [f7] p (or [f7] SPC)
-   Next Song [f7] n
-   Love Song [f7] +
-   Hate Song [f7] -
+* Pausing [f7] p (or [f7] SPC)
+* Next Song [f7] n
+* Love Song [f7] +
+* Hate Song [f7] -
 
 This mode is still a work in progress so a lot of the commands will have to have some interaction with the “pianobar” process buffer.
 
