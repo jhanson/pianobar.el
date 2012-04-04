@@ -12,9 +12,9 @@ The second line will lazy load the file when you run the command M-x pianobar
 
 You can set the username, password, and station variables to login automatically when you run pianobar with the following:
 
-(setq pianobar-username "MYEMAIL")
-(setq pianobar-password "MYPASSWORD")
-(setq pianobar-station "0")
+    (setq pianobar-username "MYEMAIL")
+    (setq pianobar-password "MYPASSWORD")
+    (setq pianobar-station "0")
 Also if the executable “pianobar” is not on your path you will need to set the variable pianobar-program-command. You can set this with
     (setq 'pianobar-program-command "/path/to/pianobar")
 
