@@ -331,9 +331,8 @@ currently in pianobar"
 
 (defun pianobar-format-current-song (string)
   "Removes extranous characters so when the song is displayed to
-the user it looks a little better. TODO remove backslashes"
-  string)
-  ;;(replace-in-string (replace-in-string string "|>" "" ) "\n" ""))
+the user it looks a little better."
+  (replace-regexp-in-string "\n" "" (replace-regexp-in-string "|> " "" (replace-regexp-in-string " \"\"" "\"" (replace-regexp-in-string "Ok.\n  " "" string)))))
 
 (defun pianobar-preoutput-filter (str)
   "removes the 2k junk"
